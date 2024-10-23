@@ -143,7 +143,10 @@ if (isset($_POST['submit'])) {
                     <input type="cel" name="telefone" id="telefone" class="inputUser" required>
                     <label for="telefone" class="label_input">Telefone</label>
                 </div>
-          
+              
+                <br>
+                <br>
+                <input type="submit" name="submit" id="submit">
             </div>
         </form>
     </div>
@@ -151,6 +154,7 @@ if (isset($_POST['submit'])) {
     <script>
         $('#telefone').mask('(00) 0000-0000');
 
+        $('#date').mask('00/00/0000');
     </script>
 
 </body>
