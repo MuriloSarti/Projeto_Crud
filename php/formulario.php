@@ -8,10 +8,9 @@ if (isset($_POST['submit'])) {
     $senha = $_POST['senha'];
     $email = $_POST['email'];
     $telefone = $_POST['telefone'];
-    $data_nasc = $_POST['data_nascimento'];
 
-    $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,senha,email,telefone,data_nasc)
-    VALUES ('$nome','$senha','$email','$telefone','$data_nasc')");
+    $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,senha,email,telefone)
+    VALUES ('$nome','$senha','$email','$telefone')");
 
 
     header('Location: index.php');
