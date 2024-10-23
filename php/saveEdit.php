@@ -7,10 +7,9 @@ if (isset($_POST['update'])) {
     $nome = $_POST['nome'];
     $email = $_POST['email'];
     $telefone = $_POST['telefone'];
-    $data_nasc = $_POST['data_nascimento'];
 
     $sqlInsert = "UPDATE usuarios 
-        SET nome='$nome',email='$email',telefone='$telefone',data_nasc='$data_nasc'
+        SET nome='$nome',email='$email',telefone='$telefone'
         WHERE id=$id";
     $result = $conexao->query($sqlInsert);
 

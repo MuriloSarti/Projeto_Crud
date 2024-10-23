@@ -11,7 +11,6 @@ if (!empty($_GET['id'])) {
             $senha = $user_data['senha'];
             $email = $user_data['email'];
             $telefone = $user_data['telefone'];
-            $data_nasc = $user_data['data_nasc'];
         }
     } else {
         header('Location: sistema.php');
@@ -137,9 +136,6 @@ if (!empty($_GET['id'])) {
                     <label for="telefone" class="labelInput">Telefone</label>
                 </div>
                 <br>
-                <label for="data_nascimento"><b>Data de Nascimento:</b></label>
-                <input type="text" name="data_nascimento" class="inputUser" id="date" value=<?php echo $data_nasc; ?> required>
-                <br><br>
                 <input type="hidden" name="id" value=<?php echo $id; ?>>
                 <input type="submit" name="update" id="submit">
             </div>

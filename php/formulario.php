@@ -147,9 +147,6 @@ if (isset($_POST['submit'])) {
                 <br>
                 <label for="nome"> <b> Data de Nascimento </b> </label>
                 <input type="text" name="data_nascimento" class="inputUser" id="date" class="inputUser" required>
-                <br>
-                <br>
-                <input type="submit" name="submit" id="submit">
             </div>
         </form>
     </div>
