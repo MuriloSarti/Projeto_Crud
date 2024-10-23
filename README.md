@@ -47,3 +47,34 @@ try {
     echo "Connection failed: " . $e->getMessage();
 }
 ?>
+3. Executando o Projeto
+Inicie seu servidor local (pode ser com o XAMPP, WAMP ou simplesmente usando o servidor embutido do PHP):
+
+bash
+Copiar código
+php -S localhost:8000
+Abra o navegador e acesse http://localhost:8000.
+
+📂 Estrutura de Diretórios
+bash
+Copiar código
+/crud-php
+|-- config.php        # Configuração de conexão com o banco de dados
+|-- create.php        # Página para criar um novo registro
+|-- index.php         # Página principal para listar registros
+|-- update.php        # Página para editar um registro
+|-- delete.php        # Script para deletar um registro
+|-- styles.css        # Arquivo de estilos (opcional)
+🛠️ Funcionalidades
+Criar: Adiciona um novo usuário ao banco de dados.
+Ler: Lista todos os usuários cadastrados.
+Atualizar: Permite a edição de informações do usuário.
+Deletar: Remove um usuário específico do banco de dados.
+✨ Como Contribuir
+Fork o projeto
+Crie uma branch para sua feature (git checkout -b minha-feature)
+Faça commit das suas alterações (git commit -m 'Adiciona minha feature')
+Push para a sua branch (git push origin minha-feature)
+Abra um Pull Request
+📄 Licença
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
