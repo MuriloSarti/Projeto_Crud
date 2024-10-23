@@ -95,10 +95,10 @@ $result = $conexao->query($sql);
         .stma {
             text-align: center;
         }
-
         .tbla {
             position: relative;
-            left: 130px;
+            left: 670px;
+            top: 50px;
         }
     </style>
 </head>
@@ -123,7 +123,7 @@ $result = $conexao->query($sql);
     <br>
     <h1 class="stma">Aqui esta todos os usuarios cadastrados</h1>
     <div class="tbla">
-        <table id="example" class=" table-striped tabelas" style="width:1000px">
+        <table style="width:800px">
             <thead>
                 <tr>
                     <th scope="col">ID</th>
@@ -141,7 +141,6 @@ $result = $conexao->query($sql);
                     echo "<td>" . $user_data['nome'] . "</td>";
                     echo "<td>" . $user_data['email'] . "</td>";
                     echo "<td>" . $user_data['telefone'] . "</td>";
-
                     echo "<td>
                         <a class='btn btn-sm btn-success' href='edit.php?id=$user_data[id]' title='Editar'>
                             <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-pencil' viewBox='0 0 16 16'>
